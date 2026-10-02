@@ -26,4 +26,3 @@ export default function PastPapers({ papers, setPapers }) {
     </div>
   );
 }
-

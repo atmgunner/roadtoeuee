@@ -27,7 +27,7 @@ export const D = {
     12: S("U1 Application of Biology|U2 Microorganisms|U3 Cellular Respiration & Photosynthesis|U4 Evolution|U5 Human Body Systems|U6 Climate Change") },
     ov: "Grade 9 Cells and Grade 10 Biochemical Molecules and Cell Reproduction support Grade 11 Enzymes and Genetics. Human Biology (G9, G10) merges into Human Body Systems (G11, G12). Ecology and Conservation lead into Population and Climate Change." },
 };
-export const ORDER = ["chem", "phys", "math", "bio"];
+export const ORDER = ["chem", "bio", "math", "phys"];
 export const TAGS = ["Formula Error", "Misread Question", "Definition Gap", "Calculation Slip", "Concept Confusion"];
 export const uid = (s, g, i) => `${s}-${g}-${i}`;
 export const units = (s) => Object.entries(D[s].g).flatMap(([g, a]) => a.map((u, i) => ({ id: uid(s, g, i), g, u })));
